@@ -1,0 +1,1 @@
+link on cv.md: https://ritafomkina.github.io/rsschool-cv/cv
