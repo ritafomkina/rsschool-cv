@@ -1,0 +1,294 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+header {
+  display: block;
+  background-color: #79838f;
+  color: #fedcd0;
+  border-bottom: 10px solid #fedcd0;
+}
+
+footer {
+  display: block;
+  background-color: #79838f;
+  color: #fedcd0;
+  border-top: 10px solid #fedcd0;
+}
+
+main {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px 20px;
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-container {
+  justify-content: flex-end;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-item {
+  margin: 10px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  /* padding: 4px; */
+  color: #fedcd0;
+  transition: color 0.5s;
+  padding: 0 10px;
+  line-height: 20px;
+}
+
+.link:hover {
+  color: #672f2f;
+}
+
+.link:visited {
+  color: #672f2f;
+}
+
+.section {
+  display: block;
+  padding: 20px;
+  min-width: 27%;
+  border-bottom: 1px solid #672f2f;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.section-profile {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #672f2f;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-aboutme {
+  max-width: 40%;
+}
+
+.section-contacts {
+  max-width: 40%;
+}
+
+.section-education {
+  max-width: 20%;
+}
+
+.section-courses {
+  max-width: 40%;
+}
+
+.myphoto {
+  display: block;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-content: center;
+}
+
+img {
+  width: 10%;
+  border: 2px solid #672f2f;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-info {
+  display: inline;
+}
+
+.h1 {
+  display: inline;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border-right: 2px solid #fedcd0;
+  padding-right: 7px;
+}
+
+.h3 {
+  display: inline;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+h2 {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 1.5;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.list-item::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background-size: 12px 12px;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contacts:nth-child(1)::before {
+  background-image: url(assets/svg/icon_loc.png);
+}
+
+.contacts:nth-child(2)::before {
+  background-image: url(assets/svg/icon_mail.png);
+}
+
+.contacts:nth-child(3)::before {
+  background-image: url(assets/svg/icon_tlf.png);
+}
+
+.contacts:nth-child(4)::before {
+  background-image: url(assets/svg/icon_git.png);
+}
+
+.contacts:nth-child(5)::before {
+  background-image: url(assets/svg/icon_tg.png);
+}
+
+.ul-list::before {
+  content: "";
+  background-size: contain;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(assets/svg/icon_circle.png);
+}
+
+.code {
+  border: 1px solid #672f2f;
+  padding: 10px 30px;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.section-code {
+  border-bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  font-size: 20px;
+  justify-content: left;
+  vertical-align: baseline;
+  align-items: center;
+  margin: 10px;
+}
+
+.github-link {
+  margin: 7px;
+}
+
+.github-link:hover {
+  color: #672f2f;
+}
+
+.github-link:visited {
+  color: #672f2f;
+}

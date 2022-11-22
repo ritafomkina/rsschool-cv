@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <img src="assets/img/image.jpg" alt="my photo"> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/svg/favicon.ico" />
+    <title>cv</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="link" href="#contacts">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#aboutme">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#languages">Languages</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#code">Code example</a>
+            </li>
+
+            <!-- <li class="nav-item"></li>
+                    <li class="nav-item"></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="section section-profile" id="profile">
+          <div class="myphoto">
+            <img src="assets/img/fomkina-cv.JPG" alt="my-photo" />
+          </div>
+          <div class="profile-info">
+            <h1 class="h1">Margarita Fomkina</h1>
+            <h3 class="h3">Junior front-end developer</h3>
+          </div>
+        </section>
+        <section class="section section-contacts" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="list">
+            <li class="list-item contacts">
+              <!-- ::before -->
+              Vilnius, Lithuania
+            </li>
+            <li class="list-item contacts">
+              E-mail:
+              <a href="mailto:ritakisil@mail.ru" title="E-mail" class="icon">
+                ritakisil@mail.ru</a
+              >
+            </li>
+            <li class="list-item contacts">Phone: +370 660 43 996</li>
+            <li class="list-item contacts">
+              Github:
+              <a
+                href="https://github.com/ritafomkina"
+                title="Github"
+                class="icon"
+              >
+                ritafomkina
+              </a>
+            </li>
+            <li class="list-item contacts">
+              Telegram:
+              <a href="https://t.me/ritatita" title="Telegram" class="icon">
+                ritatita
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="section section-aboutme" id="aboutme">
+          <h2 class="section-title">About me</h2>
+          <p class="section-item">
+            In 2022, my life has changed a lot. I have moved to another country
+            and decided to try myself in a new area. My main strength is that I
+            really love to study (in the past I was a historian, researcher, PhD
+            candidate). I like those areas of knowledge in which you can do this
+            indefinitely. I'm going to learn Web-development in depth, and this
+            СV is my first touch to the IT world.
+          </p>
+        </section>
+        <section class="section section-education" id="education">
+          <h2 class="section-title">Education</h2>
+          <p class="section-item">St. Petersburg University</p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="list">
+            <li class="list-item ul-list">Web-development: HTML5, CSS3, JS</li>
+            <li class="list-item ul-list">Version control: GIT, Github</li>
+          </ul>
+        </section>
+        <section class="section section-courses" id="courses">
+          <h2 class="section-title">Courses</h2>
+          <ul class="list">
+            <li class="list-item ul-list">
+              HTML for beginner & CSS for beginner on
+              <a href="https://ru.hexlet.io/">Hexlet</a>
+            </li>
+            <li class="list-item ul-list">
+              <a href="https://javascript.info/"
+                >The Modern JavaScript Tutorial</a
+              >
+            </li>
+            <li class="list-item ul-list">
+              <a href="https://rs.school/">The Rolling Scopes School</a>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="languages">
+          <h2 class="section-title">Languages</h2>
+          <ul class="list">
+            <li class="list-item ul-list">Russian (native)</li>
+            <li class="list-item ul-list">English (В1)</li>
+            <li class="list-item ul-list">French (В2);</li>
+          </ul>
+        </section>
+        <section class="section section-code" id="code">
+          <h2 class="section-title">Code example</h2>
+          <pre class="code">
+<code>
+function launchAll(launchMissile) {
+
+    function func(i) {
+        setTimeout(() => launchMissile(i), i*1000)
+    };
+
+    for(var i = 0; i &lt; 5; i++) {
+         func(i);
+    };
+
+};
+</code>
+            </pre>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-container">
+        &#169;
+        <a class="link github-link" href="https://github.com/ritafomkina">
+          ritafomkina</a
+        >
+        2022
+      </div>
+    </footer>
+  </body>
+</html>
