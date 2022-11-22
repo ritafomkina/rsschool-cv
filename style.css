@@ -249,10 +249,18 @@ li {
   border-bottom: 0;
 }
 
+footer {
+  height: 90px;
+  display: flex;
+  align-items: center;
+
+}
+
 .footer-container {
+  width: 100%;
   display: flex;
   font-size: 20px;
-  justify-content: left;
+  justify-content: space-between;
   vertical-align: baseline;
   align-items: center;
   margin: 10px;
@@ -268,4 +276,11 @@ li {
 
 .github-link:visited {
   color: #672f2f;
+}
+
+.logo-rss {
+  background-image: url(assets/svg/logo_rs_school.svg);
+  width: 90px;
+  height: 40px;
+  background-repeat: no-repeat;
 }
