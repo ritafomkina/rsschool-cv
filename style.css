@@ -279,6 +279,7 @@ footer {
 }
 
 .logo-rss {
+  display: block;
   background-image: url(assets/svg/logo_rs_school.svg);
   width: 90px;
   height: 40px;
